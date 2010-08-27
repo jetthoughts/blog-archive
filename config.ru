@@ -18,7 +18,7 @@ toto = Toto::Server.new do
   # set [:setting], [value]
   # 
   set :author,    "Michael Nikitochkin" #ENV['USER']                               # blog author
-  set :title      "JetThoughts' articles"
+  set :title,     "JetThoughts' articles"
   # set :title,     Dir.pwd.split('/').last                   # site title
   # set :root,      "index"                                   # page to load on /
   # set :date,      lambda {|now| now.strftime("%d/%m/%Y") }  # date format for articles
