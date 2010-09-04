@@ -7,8 +7,6 @@ I am not a linux hacker, so I wasted a lot of time to find solution to strip fir
 
     :::sh
     tail -f some_file | ruby -e 'a =0; while t=gets; a+=1; puts t if a > 1; end'
-    text
-    text
 
 It is looks very long, and I thought that this problem is very popular, and at least one tool already exist in the world.
 
