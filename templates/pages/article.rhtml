@@ -5,8 +5,12 @@
   </header>
 
   <section class="content">
-    <%= body %>
+    <%= markdown(body) %>
   </section>
+  
+  <% article[:tags].split(',').each do |tag| %>
+    <%= tag %>
+  <% end %>
 
   <section class="comments">
     <% if @config[:disqus] %>

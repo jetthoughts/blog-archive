@@ -1,5 +1,6 @@
 title: SetUp Blog
 author: Michael Nikitochkin
 date: 2009/10/16
+tags: blog,toto
 
-Today I started to <strong>write</strong> posts.
+Today I started to __write__ posts.
