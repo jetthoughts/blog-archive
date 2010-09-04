@@ -8,10 +8,6 @@
     <%= markdown(body) %>
   </section>
   
-  <% article[:tags].split(',').each do |tag| %>
-    <%= tag %>
-  <% end %>
-
   <section class="comments">
     <% if @config[:disqus] %>
       <div id="disqus_thread"></div>

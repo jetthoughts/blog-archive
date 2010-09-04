@@ -2,6 +2,7 @@ require 'toto'
 require 'coderay'
 require 'rack/codehighlighter'
 
+CodeRay::Encoders["html"]::DEFAULT_OPTIONS[:line_numbers]=:inline
 use Rack::Codehighlighter, :coderay, :markdown => true, :element => "pre>code", :pattern => /\A:::(\w+)\s*(\n|&#x000A;)/i, :logging => false
 
 # Rack config

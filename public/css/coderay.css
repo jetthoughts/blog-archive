@@ -3,8 +3,11 @@
   border: 1px solid silver;
   font-family: 'Courier New', 'Terminal', monospace;
   color: #000;
+  line-height: 23px;
+  padding:0px;
 }
 .CodeRay pre { margin: 0px }
+pre.CodeRay { margin: 0px }
 
 div.CodeRay { }
 
@@ -27,6 +30,8 @@ ol.CodeRay { font-size: 10pt }
 ol.CodeRay li { white-space: pre }
 
 .CodeRay .code pre { overflow: auto }
+
+pre.CodeRay { overflow: auto }
 
 .CodeRay .debug { color:white ! important; background:blue ! important; }
 
