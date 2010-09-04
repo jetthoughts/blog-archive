@@ -3,6 +3,7 @@ author: Michael Nikitochkin
 date: 2009/11/22
 tags: rails,config,jruby
 
+Sometime we run same application in different platforms: Ruby and JRuby or Windows and Linux. And each platform has own version of a gem.
 Example of my config file for Rails to run instance with **ruby** or **jruby**.
 Setting gems for different platforms **config/environment.rb**:
 

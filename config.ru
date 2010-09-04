@@ -1,6 +1,7 @@
 require 'toto'
 require 'coderay'
 require 'rack/codehighlighter'
+require 'ruby-debug'
 
 CodeRay::Encoders["html"]::DEFAULT_OPTIONS[:line_numbers]=:inline
 use Rack::Codehighlighter, :coderay, :markdown => true, :element => "pre>code", :pattern => /\A:::(\w+)\s*(\n|&#x000A;)/i, :logging => false
@@ -33,6 +34,7 @@ toto = Toto::Server.new do
   # set :ext,       'txt'                                     # file extension for articles
   # set :cache,      28800                                    # cache duration, in seconds
 
+  set :github, {:user => "miry", :repos => ['calculations_by_time_range'], :ext => 'md'}
   set :date, lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
 end
 

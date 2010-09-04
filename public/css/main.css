@@ -108,3 +108,24 @@ body > footer {
   font-size: 18px;
   color: #888;
 }
+
+#archives li a span{
+    background: url(../images/close.png) no-repeat 0 0.4em;
+}
+
+#archives li a.open span{
+    background: url(../images/open.png) no-repeat -0.1em 0.5em;
+}
+
+#archives ul ul {
+    display: none;
+}
+
+#archives a.switcher {
+    color: black;
+    text-decoration: none;
+}
+
+#archives a.switcher:hover {
+    color: #438dac;
+}

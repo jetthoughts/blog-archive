@@ -17,7 +17,7 @@ I knew a tool __sed__ and used it before. So read the manual and wuala:
 
 Remove first 10 lines:
 
-        :::sh
-        tail -f some_file | sed '1,10d'
+    :::sh
+    tail -f some_file | sed '1,10d'
 
 It do the same thing as first solution, but more clear and simple. __sed__ is a great tool.

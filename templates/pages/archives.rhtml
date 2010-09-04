@@ -1,9 +1,32 @@
 <h1><%= @path %></h1>
+
 <ul>
   <% if archives.length > 0 %>
-    <% for entry in archives %>
+    <% articles_grouped_by_year = archives.group_by{|a| a[:date].year } %>
+    <% for year in articles_grouped_by_year.keys.sort{|x,y| y <=> x } %>
       <li>
-        <a href="<%= entry.path %>"><%= entry.title %></a>
+        <a href="#" class="switcher">
+          <span>&nbsp;</span>
+          <%= year %>
+        </a>
+        <% articles_grouped_by_month = articles_grouped_by_year[year].group_by{|a| a[:date].month } %>
+        <ul>
+          <% for month in articles_grouped_by_month.keys.sort{|x,y| y <=> x } %>
+            <li>
+              <a href="#" class="switcher">
+                <span>&nbsp;</span>
+                <%= Date::MONTHNAMES[month] %>
+              </a>
+              <ul>
+                <% for entry in articles_grouped_by_month[month] %>
+                  <li>
+                    <a href="<%= entry.path %>"><%= entry.title %></a>
+                  </li>
+                <% end %>
+              </ul>
+            </li>
+          <% end %>
+        </ul>
       </li>
     <% end %>
   <% end %>
