@@ -1,7 +1,7 @@
 title: Convert BPlist to XML
 date: 14/02/2010
 author: Michael Nikitochkin
-tags:
+tags: macos,plist,xml,bplist
 
 Convert Mac OS preference files to xml:
 
