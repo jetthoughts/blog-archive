@@ -1,6 +1,7 @@
 title: Different timestamp for Rails and Postgres
 date: 16/09/2010
 author: Michael Nikitochkin
+tags:
 
 Today I found a discrepancy in Rails timestamp and Postgres timestamp for my specs:
 

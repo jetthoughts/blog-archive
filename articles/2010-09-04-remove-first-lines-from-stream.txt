@@ -1,6 +1,6 @@
 title: Remove first lines from stream
 author: Michael Nikitochkin
-date: 2010/9/4
+date: 04/09/2010
 tags: linux,sed
 
 I am not a linux hacker, so I wasted a lot of time to find solution to strip first lines from output stream. First my solution was:

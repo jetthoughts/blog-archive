@@ -1,0 +1,14 @@
+title: Mutable branch for capistrano deploy script
+date: 19/02/2010
+author: Michael Nikitochkin
+tags: capistrano,ruby
+
+I always had troubles, when test new feature. I forgot to change branch in capistrano config. So I found one solution wich help me:
+
+    set :branch, `hg branch`.chop || "default"
+
+or for git:
+
+    set :branch, `git branch | grep '*' | sed 's/^[^a-zA-Z]*//'`.chop || "master"
+
+Thats all.
