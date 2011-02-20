@@ -119,7 +119,7 @@ body > footer {
 }
 
 #archives ul ul {
-    display: none;
+/*    display: none; */
 }
 
 #archives a.switcher {

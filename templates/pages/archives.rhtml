@@ -5,7 +5,7 @@
     <% articles_grouped_by_year = archives.group_by{|a| a[:date].year } %>
     <% for year in articles_grouped_by_year.keys.sort{|x,y| y <=> x } %>
       <li>
-        <a href="#" class="switcher">
+        <a href="#" class="switcher open">
           <span>&nbsp;</span>
           <%= year %>
         </a>
@@ -13,7 +13,7 @@
         <ul>
           <% for month in articles_grouped_by_month.keys.sort{|x,y| y <=> x } %>
             <li>
-              <a href="#" class="switcher">
+              <a href="#" class="switcher open">
                 <span>&nbsp;</span>
                 <%= Date::MONTHNAMES[month] %>
               </a>
