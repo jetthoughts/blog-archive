@@ -16,9 +16,7 @@ __3)__ Add action "Run AppleScript" with content:
     :::shell
     on run {input, parameters}
       tell application "System Events"
-        set cd to short date string of (current date)
-        set the clipboard to cd
-        keystroke "v" using {command down}
+        keystroke (short date string of (current date))
       end tell
       return input
     end run
