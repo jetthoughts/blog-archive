@@ -6,7 +6,7 @@ Sometime we need to define some dynamic template before defining variables
 
 One of the solutions:
 
-          :::ruby
+     :::ruby
           string = 'echo #{expr}'  # -> "echo \#{expr}"
           expr = 1                 # -> 1
           eval("\"#{string}\"")    # -> "echo #1"
