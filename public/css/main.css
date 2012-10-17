@@ -180,3 +180,7 @@ body > footer {
     margin-left: 10px;
     text-decoration: none;
 }
+
+.CodeRay .line-numbers {
+    margin-right: 5pt;
+}
