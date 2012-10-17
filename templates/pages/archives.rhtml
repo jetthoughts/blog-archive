@@ -1,4 +1,4 @@
-<h1><%= @path %></h1>
+<h1><%= @path && @path.capitalize %></h1>
 
 <ul>
   <% if archives.length > 0 %>
@@ -6,7 +6,6 @@
     <% for year in articles_grouped_by_year.keys.sort{|x,y| y <=> x } %>
       <li>
         <a href="#" class="switcher open">
-          <span>&nbsp;</span>
           <%= year %>
         </a>
         <% articles_grouped_by_month = articles_grouped_by_year[year].group_by{|a| a[:date].month } %>
@@ -14,7 +13,6 @@
           <% for month in articles_grouped_by_month.keys.sort{|x,y| y <=> x } %>
             <li>
               <a href="#" class="switcher open">
-                <span>&nbsp;</span>
                 <%= Date::MONTHNAMES[month] %>
               </a>
               <ul>
@@ -29,6 +27,21 @@
         </ul>
       </li>
     <% end %>
+
   <% end %>
 </ul>
+
+<div class="ads-block-right">
+  <script type="text/javascript"><!--
+  google_ad_client = "ca-pub-4746659274585813";
+  /* Blog Archives Right */
+  google_ad_slot = "5171637723";
+  google_ad_width = 160;
+  google_ad_height = 600;
+  //-->
+  </script>
+  <script type="text/javascript"
+          src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+  </script>
+</div>
 
