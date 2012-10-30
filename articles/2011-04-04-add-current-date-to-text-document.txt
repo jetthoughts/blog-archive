@@ -13,7 +13,7 @@ __2)__ Choose 'Service receives' to "no input" in "any application"
 __3)__ Add action "Run AppleScript" with content:
 
 
-    :::shell
+    :::text
     on run {input, parameters}
       tell application "System Events"
         keystroke (short date string of (current date))

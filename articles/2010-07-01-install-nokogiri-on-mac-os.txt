@@ -5,5 +5,5 @@ tags: nokogiri,macos
 
 Run in the terminal:
 
-    :::sh
+    :::text
     sudo gem install nokogiri -- --with-xml2-include=/usr/include/libxml2 --with-xml2-lib=/usr/lib --with-xslt-dir=/usr
