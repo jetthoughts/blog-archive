@@ -26,10 +26,17 @@ Check it in the debugger: [debugger](https://developers.facebook.com/tools/debug
 
 But don't foget to put meta tag url with same url with params to not confuse Facebook scrapper. It could use url without params if it not provided in meta tag.
 
+    <meta property="og:url" content='<%= "#{request.protocol}#{request.host_with_port}#{request.fullpath}" -%>'/>
+    <meta property="og:image" content="<%= params[:featured_id] ? Video.find(params[:featured_id].thumbnail_url) : 'default_image_url'-%>">
 
-    <meta property="og:url" content='<%= "#{request.protocol}#{request.host_with_port}#{request.fullpath}" -%>'/>  
+If you don't provide this meta tag, the scrapper will use only url provided to link button.
+And the template for facebook like button would be something like:
 
-If you don't provide this meta tag, the scrapper will use only url provided to link button.  
+    :::erb
+    <% videos.all.each do |video| %>
+      <div class="fb-like" data-href="/videos?featured_id=#{video.id}" data-send="false" data-layout="button_count" data-width="47" data-height="80"></div>
+    <% end %>
+  
   
 Second solution: Rails dynamic routes
 =====================================
@@ -43,4 +50,14 @@ So we add just a dynamic param `:featured_id`
 
 In the layout add next:
 
-    <meta property="og:image" content="<%= params[:id] ? Video.find(params[:featured_id].thumbnail_url) : 'default_image_url'-%>">
+    <meta property="og:image" content="<%= params[:featured_id] ? Video.find(params[:featured_id].thumbnail_url) : 'default_image_url'-%>">
+
+and for each like button use next:
+
+    :::erb
+    <% videos.all.each do |video| %>
+      <div class="fb-like" data-href="/videos/#{video.id}" data-send="false" data-layout="button_count" data-width="47" data-height="80"></div>
+    <% end %>
+    
+    
+These solutions a very close to each. So it would depends on your needs. 
