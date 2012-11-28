@@ -37,7 +37,8 @@ And the template for facebook like button would be something like:
       <div class="fb-like" data-href="/videos?featured_id=#{video.id}" data-send="false" data-layout="button_count" data-width="47" data-height="80"></div>
     <% end %>
   
-  
+This is the simplest method to show different images.  
+
 Second solution: Rails dynamic routes
 =====================================
 
