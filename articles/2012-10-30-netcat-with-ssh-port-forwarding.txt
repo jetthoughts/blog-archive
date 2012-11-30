@@ -1,4 +1,5 @@
 ---
+author: Michael Nikitochkin
 title: Netcat with SSH port forwarding
 date: 30/10/2012
 
@@ -45,5 +46,3 @@ Wow it is work, but after each request the connection get closed. That's why we 
     do
       nc -l -p 8080 < pipe | ssh gw_to_private_net -p 22977  "nc 192.168.12.230 80" | tee pipe
     done
-
-If you have questions or some help, feel free to contact me: [michael@jetthoughts.com](mailto:michael@jetthouhts.com)

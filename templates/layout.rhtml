@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
   <link rel="stylesheet" type="text/css" href="/css/main.css">
   <link rel="stylesheet" type="text/css" href="/css/coderay.css">
 
@@ -9,7 +8,7 @@
   <link href="http://www.jetthoughts.com/file/theme/jetthoughts/images/favicon.png" rel="shortcut icon">
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="google-site-verification" content="BE5YTiUkPfkf0Itp9yhMpCekgBkXZoC1ierHGaCdQpQ" />
+  <meta name="google-site-verification" content="BE5YTiUkPfkf0Itp9yhMpCekgBkXZoC1ierHGaCdQpQ"/>
   <META NAME="keywords" CONTENT="<%= @context[:tags] %>">
 
   <title><%= title %></title>
@@ -17,44 +16,44 @@
   <!-- Google analitics counter -->
   <script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script>
   <script type="text/javascript">try {
-    var pageTracker = _gat._getTracker("UA-10749382-2");
-    pageTracker._trackPageview();
+      var pageTracker = _gat._getTracker("UA-10749382-2");
+      pageTracker._trackPageview();
   } catch (err) {
   }</script>
 
 </head>
 
 <body id="<%= @path %>">
-  <p>
-    <a href="http://www.jetthoughts.com/"><img title="JetThoughts" src="http://www.jetthoughts.com/file/theme/jetthoughts/images/logo_pn.png" alt="JetThoughts"></a>
-    <a href="/archives" class="navigation-link">Archives</a>
-    <a href="/" class="navigation-link">Blog</a>
-  </p>
+<p>
+  <a href="http://www.jetthoughts.com/"><img title="JetThoughts" src="http://www.jetthoughts.com/file/theme/jetthoughts/images/logo_pn.png" alt="JetThoughts"></a>
+  <a href="/archives" class="navigation-link">Archives</a>
+  <a href="/" class="navigation-link">Blog</a>
+</p>
 
-  <section>
-    <%= yield %>
-  </section>
+<section>
+  <%= yield %>
+</section>
 
-  <footer>
-    <%= Time.new.year %> &copy; Copyright
-    <a href="http://www.jetthoughts.com" title="JetThoughts">Jet<b>Thoughts</b> LLC</a>
+<footer>
+  <%= @@current_year ||= Time.new.year %> &copy; Copyright
+  <a href="http://www.jetthoughts.com" title="JetThoughts">Jet<b>Thoughts</b> LLC</a>
 
     <span style="float:right">
       <a href='https://launch.alertrocket.com/register?appKey=f61d3bfac8044c649560caa7325265f5'>Subscribe</a> to receive push notifications!
     </span>
 
-  </footer>
+</footer>
 
-  <br/>
-  <script type="text/javascript"><!--
-  google_ad_client = "ca-pub-4746659274585813";
-  /* Blog Down Links */
-  google_ad_slot = "5145184905";
-  google_ad_width = 728;
-  google_ad_height = 90;
-  //-->
-  </script>
-  <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+<br/>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4746659274585813";
+/* Blog Down Links */
+google_ad_slot = "5145184905";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
 
 </body>
 
