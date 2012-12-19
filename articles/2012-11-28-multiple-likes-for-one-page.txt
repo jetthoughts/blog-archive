@@ -1,6 +1,7 @@
 ---
 author: Michael Nikitochkin
 title: Multiple Likes for one page
+tags: facebook,like,button,thumbnail,image,mutliple,rails,route,meta
 date: 28/11/2012
 tags: facebook like button rails
 
@@ -30,7 +31,6 @@ on your page once, ideally right after the opening `<body>` tag:
 And in a place where you want to appear the button:
 
     <div class="fb-like" data-href="<replace_with_your_path>" data-send="false" data-width="450" data-show-faces="false"></div>
-
 
 Example you want share a product, so you should put like this:
 

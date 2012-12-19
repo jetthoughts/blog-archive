@@ -1,10 +1,12 @@
+@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro|Open+Baskerville|Tangerine|Clicker+Script|Merienda|Keania+One|Margarine|c);
+
 html {
     margin: 20px
 }
 
 body {
     margin: 0 auto;
-    font-family: 'Baskerville', Georgia, Times, serif;
+    font-family: 'Merienda', 'Open Baskerville', Georgia, Times, serif;
     font-size: 20px;
     line-height: 30px;
     padding: 15px;
@@ -45,6 +47,7 @@ section {
     line-height: 43px;
     margin-right: 30px;
     margin-left: 5px;
+    color: #b83000;
 }
 
 a {
@@ -91,7 +94,7 @@ body > header > h1 {
 }
 
 .post p {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .post .more {
@@ -128,7 +131,7 @@ ul, li {
 
 code {
     font-family: 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;
-    font-size: 15px;
+    font-size: 15pt;
 }
 
 pre {
@@ -184,4 +187,9 @@ body > footer {
 
 .CodeRay .line-numbers {
     margin-right: 5pt;
+}
+
+author {
+    font-family: 'Clicker Script', 'Croissant One', 'Open Baskerville', Georgia, Times, serif;
+    font-size: 20pt;
 }
