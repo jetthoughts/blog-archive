@@ -22,3 +22,7 @@ Example for rails:
       headers['Access-Control-Allow-Origin'] = '*'
       headers['Access-Control-Request-Method'] = '*'
     end
+
+
+You can look to sources of the sample Sinatra application in [GitHub](https://github.com/miry/cross-domain-sharing).
+Or use [these smaples](https://gist.github.com/miry/5447203).
