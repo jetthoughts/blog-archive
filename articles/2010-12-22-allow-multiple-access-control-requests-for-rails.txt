@@ -25,4 +25,6 @@ Example for rails:
 
 
 You can look to sources of the sample Sinatra application in [GitHub](https://github.com/miry/cross-domain-sharing).
+Demo live in
+[Heroku](http://cross-domain-ajax-request.herokuapp.com/index.html).
 Or use [these smaples](https://gist.github.com/miry/5447203).
