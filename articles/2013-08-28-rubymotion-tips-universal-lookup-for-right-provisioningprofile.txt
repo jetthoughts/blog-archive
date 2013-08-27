@@ -6,7 +6,13 @@ tags: ruby motion config rakefile
 
 I want share my exp to setup `provising_profile` for general Rubymotion project. 
 
-Found next line in Rubymotion Library: https://github.com/HipByte/RubyMotion/blob/cfc7bfdb3c17c5059a98152d7c472e13eb55f8ea/lib/motion/project/template/ios/config.rb#L79
+Found next line in Rubymotion Library: [config.rb#L79](https://github.com/HipByte/RubyMotion/blob/cfc7bfdb3c17c5059a98152d7c472e13eb55f8ea/lib/motion/project/template/ios/config.rb#L79)
+
+    :::ruby
+    def provisioning_profile(name = /iOS Team Provisioning Profile/)
+      # ....
+    end
+
 And this method allow us to search for ProvisioningProfile not just by full path how it is written in documentation.
 But you can find the ProvisioningProfile via name.
 
